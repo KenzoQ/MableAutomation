@@ -1,6 +1,0 @@
-<testsuite name="Mocha Tests" tests="1" failures="0" errors="0" skipped="0" timestamp="Fri, 17 Sep 2021 10:21:10 GMT" time="53.648">
-<testcase classname="Worker agreement" name="
-  1. ES-T566. Create an agreement, with no related job
-  2. ES-T2190. View agreement page from conversations activity feed
-" time="53.362"/>
-</testsuite>
