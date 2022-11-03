@@ -1,1 +1,1 @@
-# MableAutomation
+# automated-tests
