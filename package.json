@@ -1,0 +1,50 @@
+{
+  "name": "mable-au",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "report:cleanup": "rm -fr cypress/results cypress/screenshots cypress/reports",
+    "report:merge": "mochawesome-merge cypress/results/json/*.json > cypress/results/mochawesome-bundle.json",
+    "report:generate": "marge cypress/results/mochawesome-bundle.json -o cypress/reports/html",
+    "report:copyScreenshots": "mkdir -p cypress/screenshots && cp -r cypress/screenshots/ cypress/reports/html/screenshots",
+    "report:zip": "zip -r report.zip  cypress/reports/"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint"
+    }
+  },
+  "author": "Toan Tran",
+  "license": "ISC",
+  "devDependencies": {
+    "aws-amplify": "^4.2.2",
+    "babel-eslint": "^10.1.0",
+    "cypress": "^10.3.0",
+    "cypress-axe": "^0.8.2",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-localstorage-commands": "^1.5.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "cypress-xpath": "^1.4.0",
+    "date-fns": "^2.8.1",
+    "eslint": "^7.22.0",
+    "eslint-config-airbnb-base": "^14.2.1",
+    "eslint-config-prettier": "^8.1.0",
+    "eslint-plugin-cypress": "^2.12.1",
+    "eslint-plugin-import": "^2.23.4",
+    "eslint-plugin-prettier": "^3.3.1",
+    "faker": "^4.1.0",
+    "husky": "^5.2.0",
+    "jsonwebtoken": "^8.5.1",
+    "lodash": "^4.17.21",
+    "mocha": "^9.1.1",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0",
+    "moment": "^2.24.0",
+    "prettier": "^2.2.1"
+  }
+}
