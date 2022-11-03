@@ -6,7 +6,7 @@ describe('COVID-19 Safe shift questions', () => {
   const annaleeEmail = 'automation_annalee.covidsafeshift+sw@donotuse.com.au';
   const kyujinleeEmail = 'automation_kyujinlee.covidsafeshift+client@donotuse.com.au';
   const sangaleeEmail = 'automation_sangalee.covidsafeshift+client@donotuse.com.au';
-//sample changes
+
   const defaultPassword = 'qaAutomation2021';
   const covid19GlobalBanner = 'app-global-banners';
 
